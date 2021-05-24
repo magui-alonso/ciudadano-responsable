@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;800&family=Playfair+Display:wght@400;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(211, 211, 211);
+    margin: 10px;
+
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.contenedor {
+    background-color: #ffffff;
+
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ciudadano {
+    font-family: 'Playfair Display', serif;
+}
+
+.header {
+
+    height: 100px;
+}
+
+.menu {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+
+
+    a {
+        color: black;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+
+
+        &:hover {
+            text-decoration: none;
+            color: black;
+            text-shadow: 1px 1px 1px grey;
+
+        }
+    }
+
+    .activo {
+        border-bottom: #181b1f solid 2px;
+    }
+}
+
+
+section {
+    .frase {
+        height: 420px;
+        background-image: url("../assets/img/banner-1.jpg");
+        background-position: 25% 55%;
+        background-size: cover;
+        padding: 30px;
+        margin: 0 15px 15px 15px;
+
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            text-align: justify;
+            width: 60%;
+            color: #ffffff;
+            margin-bottom: 55px;
+            font-weight: 400;
+
+        }
+
+        .texto-1 {
+            text-align: right;
+            text-decoration-line: underline;
+            font-weight: 500;
+            
+
+        }
+    }
+
+    .manif-index {
+        width: 30%;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+
+        &:hover img {
+            transform: scale(1.1);
+        }
+
+        img {
+            width: 100%;
+            transition: all 1s ease-in-out;
+            opacity: 80%;
+
+        }
+
+        a {
+            position: absolute;
+            font-size: 35px;
+            font-family: 'Playfair Display', serif;
+
+        }
+    }
+
+    .contexto {
+        height: fit-content;
+        padding: 50px 0 50px 0;
+
+        p {
+
+            margin: 5px;
+            width: 70%;
+
+        }
+    }
+
+    .compromiso {
+        height: fit-content;
+        margin-bottom: 20px;
+        margin-top: 50px;
+
+        h3 {
+            margin-bottom: 30px;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .btn-firma {
+            padding: 10px;
+            border-radius: 5px;
+            border: grey;
+            margin-bottom: 50px;
+            background-color: grey;
+            box-shadow: #181b1f 2px 2px 2px 2px;
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+
+            &:hover {
+                text-shadow: 1.5px 1.5px 1.5px #181b1f;
+                box-shadow: #181b1f 2px 2px 2px 2px;
+                background-color: #181b1f;
+                transition: all 0.7s ease-in-out 0.5s;
+            }
+        }
+
+        h6 {
+            width: 50%;
+            text-align: center;
+            font-size: 15px;
+            margin-bottom: 20px;
+
+        }
+
+        .img-lista {
+            &:hover {
+                transform: scale(1.1);
+                transition: all 1s ease-in-out;
+            }
+        }
+    }
+}
+
+/*seccion manifesto*/
+.manifesto {
+    margin: 10px;
+    height: fit-content;
+    padding: 20px 0 0 0;
+
+
+
+    h3 {
+        margin-bottom: 20px;
+        background-color: #181b1f;
+        color: #ffffff;
+        width: 50%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    p {
+        width: 50%;
+    }
+}
+
+/*formulario*/
+
+.modal-header {
+    background-color: #181b1f;
+
+}
+
+.modal-title {
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+}
+
+.close {
+    color: #ffffff;
+
+    &:hover {
+        color: #ffffff;
+    }
+}
+
+.campos-form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+
+    input {
+        border: none;
+        border-bottom: solid 2px rgb(202, 202, 202);
+    }
+
+    textarea {
+        border: none;
+        border: solid 2px rgb(202, 202, 202);
+    }
+}
+
+.label-form {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+#botonEnviar {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.btn-enviar {
+    padding: 10px;
+    border-radius: 5px;
+    border: grey;
+    margin-bottom: 50px;
+    background-color: grey;
+    box-shadow: #181b1f 2px 2px 2px 2px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+
+    &:hover {
+        text-shadow: 1.5px 1.5px 1.5px #181b1f;
+        box-shadow: #181b1f 2px 2px 2px 2px;
+        background-color: #181b1f;
+        transition: all 0.7s ease-in-out 0.5s;
+    }
+}
+
+
+
+footer {
+    background: #181b1f;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .menu-footer {
+
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .texto-footer {
+        color: #ffffff;
+        font-weight: 400;
+        height: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-family: 'Montserrat', sans-serif;
+
+        &:hover {
+            border-bottom: #ffffff solid 2px;
+            color: #ffffff;
+            text-shadow: 1px 1px 1px grey;
+
+        }
+    }
+
+
+    h6 {
+        font-size: 12px;
+        font-weight: 200;
+        color: #ffffff;
+        padding-top: 15px;
+    }
+}
+
+.politicas {
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-gracias {
+    height: 57vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+
+    h2 {
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+@media (min-width: 300px) and (max-width: 768px) {
+
+
+
+    h1 {
+        font-size: 32px;
+    }
+
+    section {
+        .manif-index {
+            height: 100px;
+
+            a {
+                font-size: 20px;
+            }
+
+            img {
+                width: 100%;
+                transition: all 1s ease-in-out;
+                opacity: 80%;
+            }
+        }
+
+        .frase {
+
+            background-image: url("../assets/img/banner-1.jpg");
+            background-position: 50% 55%;
+            margin-bottom: 50px;
+
+            p {
+                font-size: 14px;
+                width: 80%;
+                text-align: left;
+                
+               
+              
+                
+
+               .texto-1 {
+                    font-size: 25px;
+
+                }
+            }
+        }
+
+        .contexto {
+
+            height: fit-content;
+            padding: 20px 0 20px 0;
+
+
+            p {
+                margin-top: 10px;
+                width: 90%;
+            }
+        }
+
+        .compromiso {
+            h6 {
+                width: 70%;
+                font-size: 12px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .manifesto {
+            h3 {
+                width: 85%;
+            }
+
+            p {
+                width: 85%;
+            }
+        }
+    }
+
+    footer {
+
+        .menu-footer {
+            width: 70%;
+        }
+        h6 {
+            font-size:60%;
+        }
+
+
+    }
+
+    .section-gracias {
+        height: 63.5vh;
+
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+
+
+
+
+}
